@@ -136,7 +136,7 @@ section {
 }
 
 .background-section:hover {
-    background-size: 110%; /* Zoom in the background image without changing section size */
+    background-size: 100%; /* Zoom in the background image without changing section size */
 }
 
 .background-section .explore-btn:hover {
