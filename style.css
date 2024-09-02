@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans';
+    color: white;
+}
+
+section h2 {
+    color: #f9cf2a;
+}
+
+body {
+    background-color: #212226 !important;
+}
+
+.navbar {
+    background-color: #212226;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adjust the shadow as needed */
+}
+
+
+.navbar-custom .navbar-nav .nav-link {
+    color: white;
+    margin: 0 15px;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    padding-bottom: 5px;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease; 
+}
+
+.navbar-nav .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Ensure act class has a solid border-bottom and no underline effect on hover */
+.navbar-nav .act {
+    color: white;
+    border-bottom: 2.5px solid #f9cf2a;
+    position: relative;
+    z-index: 1; /* Ensure it appears above other links */
+}
+
+/* Remove underline effect for the .act class link when hovering over other links */
+.navbar-nav .nav-link:hover:not(.act)::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Ensure .act class link does not show underline effect on hover */
+.navbar-nav .act:hover::after {
+    content: none;
+}
+
+/* Ensures the navbar stays at the top when scrolling */
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+  
+/* Center the navigation links in the viewport */
+.navbar-collapse {
+    justify-content: center;
+}
+
+.custom-offcanvas .offcanvas-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.offcanvas-body .navbar-nav .nav-link {
+    color: white;
+}
+
+.custom-offcanvas {
+    background-color: #212226 !important;
+}
+
+.contact-us {
+    color: white; /* Initial font color */
+    transition: color 0.3s, background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.contact-us:hover {
+    color: #212226 !important; /* Text color on hover */
+    background-color: #ffffff; /* Background color on hover */
+    padding: 10px; /* Optional: add padding for a better appearance on hover */
+}
+
+section {
+    margin: 50px 0;
+    padding: 0 18px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+}
+
+.btn-custom {
+    margin: 10px 0;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.background-section {
+    width: 100%;
+    height: 50vh;
+    background-image: url('img/home.jpg'); /* Replace with your image URL */
+    background-size: 100%; /* Start with the image fully covering the section */
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 50px;
+    transition: background-size 0.5s ease; /* Smooth transition for zoom */
+}
+
+.background-section:hover {
+    background-size: 110%; /* Zoom in the background image without changing section size */
+}
+
+.background-section .explore-btn:hover {
+    background-color: #f9cf2a;
+}
+
+.viewmore-btn:hover {
+    background-color: #f9cf2a;
+    border: none !important;
+    color: black !important; 
+}
+
+.img-about {
+    position: relative;
+    overflow: hidden; /* Ensures the image stays within the container */
+}
+
+.img-about img {
+    width: 100%; /* Make the image responsive */
+    transition: transform 0.5s ease; /* Smooth transition for the zoom effect */
+    transform-origin: center center; /* Zoom from the center */
+}
+
+.img-about:hover img {
+    transform: scale(1.1); /* Zoom in the image on hover */
+}
+
+.content-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black; /* Adjust text color as needed */
+    text-align: center;
+    padding: 20px; /* Add padding if needed */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.content-overlay h2 {
+    font-size: 2rem; /* Adjust size as needed */
+    margin-bottom: 10px;
+    color: black;
+}
+
+.content-overlay p {
+    font-size: 1rem; /* Adjust size as needed */
+    color: black;
+}
+
+.background-section:hover .content-overlay {
+    opacity: 1;
+}
+
+/* Additional CSS if needed */
+.btns p {
+    color: white; /* Text color for large devices */
+    font-size: 14px; /* Adjust font size as needed */
+}
+
+.btns-below p {
+    color: white; /* Text color for small devices */
+    font-size: 14px; /* Adjust font size as needed */
+}
+
+.btns .d-flex a img {
+    width: 24px; /* Adjust size as needed */
+    height: 24px;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+}
+
+.btns .d-flex a img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+    opacity: 0.8; /* Slight opacity change on hover */
+}
+
+
+@media (max-width: 576px) {
+    .custom-offcanvas {
+        width: 200px !important;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #f9cf2a;
+    }
+
+    .btns-below {
+        display: block;
+    }
+
+    .header .btns {
+        display: none;
+    }
+}
