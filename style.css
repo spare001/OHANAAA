@@ -191,8 +191,8 @@ body {
 }
 
 .contact-us:hover {
-    color: black !important; /* Text color on hover */
-    background-color: transparent; /* Background color on hover */
+    color: white !important; /* Text color on hover */
+    background-color: transparent !important; /* Background color on hover */
     padding: 10px; /* Optional: add padding for a better appearance on hover */
     border: 1px solid white !important;
 }
