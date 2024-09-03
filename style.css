@@ -81,8 +81,7 @@ section h1 {
 }
 
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url('img/home.jpg') no-repeat center center fixed;
-    background-size: cover; /* Ensure the image covers the entire viewport */
+    background: black;
     font-family: 'DM Sans';
     color: white;
     height: 100vh; /* Full viewport height */
