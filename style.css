@@ -81,7 +81,7 @@ section h1 {
 }
 
 body {
-    background: black;
+    background: black !important;
     font-family: 'DM Sans';
     color: white;
     height: 100vh; /* Full viewport height */
