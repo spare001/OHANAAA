@@ -183,6 +183,7 @@ body {
     background-color: #f9cf2a !important; /* Background color on hover */
     padding: 10px; /* Optional: add padding for a better appearance on hover */
     border: 1px solid #f9cf2a !important;
+    border-radius: 5px;
 }
 
 .contact-us:hover {
@@ -280,5 +281,11 @@ body {
 
       section {
         padding: 0px 18px 50px 18px;
+    }
+
+    .viewmore-btn {
+        width: 100%;
+        display: block; /* Ensure the button behaves as a block element for full-width */
+        text-align: center; /* Center text within the button */
     }
 }
