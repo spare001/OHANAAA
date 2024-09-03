@@ -4,6 +4,10 @@
     color: white;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .header {
     padding: 20px;
 }
