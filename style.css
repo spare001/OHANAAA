@@ -169,7 +169,7 @@ body {
 
 .offcanvas-body .navbar-nav .nav-link {
     color: white;
-    font-size: 15px;
+    font-size: 25px;
 }
 
 .custom-offcanvas {
@@ -248,7 +248,7 @@ body {
 
 @media (max-width: 576px) {
     .custom-offcanvas {
-        width: 300px !important;
+        width: 250px !important;
     }
 
     .navbar-nav .nav-link:hover {
