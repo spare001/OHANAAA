@@ -79,12 +79,13 @@ section h2 {
 }
 
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('img/home.jpg') no-repeat center center fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('img/home.jpg') no-repeat center center scroll;
     background-size: cover;
     font-family: 'DM Sans';
     color: white;
     background-clip: content-box;
     height: 100vh;
+    width: 100%;
 }
 
 .navbar {
