@@ -88,7 +88,7 @@ body {
 }
 
 .navbar {
-    background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url('img/home.jpg') no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.95)), url('img/home.jpg') no-repeat fixed;
     background-position: top center; /* Position the image at the top center */
     background-size: cover; /* Cover the entire navbar area */
     color: white; /* Ensure text color contrasts with background */
