@@ -84,6 +84,7 @@ body {
     font-family: 'DM Sans';
     color: white;
     background-clip: content-box;
+    height: 100vh;
 }
 
 .navbar {
