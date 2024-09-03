@@ -83,6 +83,7 @@ body {
     font-family: 'DM Sans';
     color: white;
     height: 100vh; /* Full viewport height */
+    background: black;
 }
 
 .navbar {
