@@ -1,79 +1,92 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'DM Sans';
     color: white;
+}
+
+.header {
+    padding: 20px;
+}
+
+.explore-btn:hover {
+    background-color: white !important;
+    color: black !important;
+    border: none !important;
 }
 
 .image-container {
     position: relative;
     width: 100%;
-    height: 50vh;
+    height: 50vh; /* Adjust height as needed */
     overflow: hidden;
     margin-bottom: 50px;
-  }
+}
 
-  .image-container img {
+.image-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+}
 
-  .overlay {
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.7);
+    background: #ffdf60d0;
     color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-  }
+    opacity: 1; /* Ensure the overlay is always visible */
+    transition: opacity 0.5s ease; /* Optional: keep transition for smooth effect */
+}
 
-  .image-container:hover .overlay {
-    opacity: 1;
-  }
-
-  .overlay h2 {
+.overlay h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-  }
+}
 
-  .overlay p {
+.overlay p {
     font-size: 1rem;
     margin-bottom: 1.5rem;
     color: black;
-  }
+    padding: 0 20px;
+}
 
-  .overlay button {
-    padding: 0.5rem 1.5rem;
-    border: none;
-    background-color: white;
+.overlay a {
     color: black;
-    cursor: pointer;
-  }
+    border: 1px solid black;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
 
-  .overlay button:hover {
+.overlay a:hover {
     background-color: black;
     color: white;
-  }
+}
+
+section {
+    margin: 50px 0;
+    padding: 0 18px;
+}
 
 section h2 {
     color: #f9cf2a;
 }
 
 body {
-    background-color: #212226 !important;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('img/home.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'DM Sans';
+    color: white;
 }
 
 .navbar {
-    background-color: #212226;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adjust the shadow as needed */
+    background-color: black;
 }
 
 
@@ -100,6 +113,15 @@ body {
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.3s ease; 
+}
+
+.custom-offcanvas .nav-link::after {
+    content: none;
+}
+
+.custom-offcanvas .nav-link:hover {
+    color: black !important;
+    font-weight: 500;
 }
 
 .navbar-nav .nav-link:hover::after {
@@ -144,11 +166,11 @@ body {
 }
 
 .offcanvas-body .navbar-nav .nav-link {
-    color: white;
+    color: black;
 }
 
 .custom-offcanvas {
-    background-color: #212226 !important;
+    background-color: #f9cf2a !important;
 }
 
 .contact-us {
@@ -158,31 +180,22 @@ body {
 
 .contact-us:hover {
     color: #212226 !important; /* Text color on hover */
-    background-color: #ffffff; /* Background color on hover */
+    background-color: #f9cf2a; /* Background color on hover */
     padding: 10px; /* Optional: add padding for a better appearance on hover */
+    border: 1px solid #f9cf2a !important;
 }
 
-section {
-    margin: 50px 0;
-    padding: 0 18px;
-}
-
-.header h1 {
-    font-size: 2.5rem;
+.header h2 {
+    font-size: 2rem;
 }
 
 .btn-custom {
-    margin: 10px 0;
     font-size: 1rem;
     text-align: center;
     text-decoration: none;
     color: #fff;
     border: none;
     border-radius: 5px;
-}
-
-.explore-btn:hover {
-    background-color: #f9cf2a;
 }
 
 .viewmore-btn:hover {
@@ -204,39 +217,6 @@ section {
 
 .img-about:hover img {
     transform: scale(1.1); /* Zoom in the image on hover */
-}
-
-.content-overlay {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: black; /* Adjust text color as needed */
-    text-align: center;
-    padding: 20px; /* Add padding if needed */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.7);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.content-overlay h2 {
-    font-size: 2rem; /* Adjust size as needed */
-    margin-bottom: 10px;
-    color: black;
-}
-
-.content-overlay p {
-    font-size: 1rem; /* Adjust size as needed */
-    color: black;
-}
-
-.background-section:hover .content-overlay {
-    opacity: 1;
 }
 
 /* Additional CSS if needed */
@@ -278,4 +258,16 @@ section {
     .header .btns {
         display: none;
     }
+
+    .image-container {
+        position: relative;
+        width: 100%;
+        height: 60vh;
+        overflow: hidden;
+        margin-bottom: 50px;
+      }
+
+      section p {
+        padding: 0 !important;
+      }
 }
